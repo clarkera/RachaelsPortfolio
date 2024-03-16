@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+  
+  /* Container for flexboxes */
+  .content {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    gap:3%;
+  }
+  
+  /* Style the navigation menu */
+  nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #ccc;
+    padding: 20px;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display:flex;
+    justify-content: space-evenly;
+  }
+  
+  /* Style the content */
+  article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+
+  main{
+    padding: 1% 5% 1% 5%;
+    margin:1% 5% 1% 5%;
+  }
+  .aboutme-content{
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+  }
+  
+  .headshot{
+    border:5px solid black;
+    border-radius: 15px;
+    width:30vw;
+    height: 40vh;
+  }
+.section-title{
+    width:100%;
+    font-size:2rem;
+    text-align:center;
+    background-color: rgb(91, 216, 174);
+    line-height: 2;
+}
+
+.projects{
+  width: 28%;
+  border: 3px solid grey;
+  padding:1%;
+  margin:1%;
+  position: relative;
+}
+
+.projects a{
+  width: 100%;
+}
+.projects a img{
+  width: 100%;
+}
+
+#project-work{
+  flex-wrap: wrap;
+}
+h3{
+  font-style: oblique;
+  font-size: 1.5rem;
+}
+summary{
+  position:absolute;
+  bottom:10px;
+  right:5px;
+  background-color: #ccc;
+  color:aliceblue
+}
+  /* Style the footer */
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
+  
